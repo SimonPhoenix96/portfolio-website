@@ -1,1 +1,17 @@
-<h1>{{list.title}}</h1>
+<h1 class="emacs_title">* Portfolio</h1>
+<mat-accordion>
+  <mat-expansion-panel #thisPanel>
+    <mat-expansion-panel-header >
+
+      <mat-panel-title class="emacs_title">
+
+      {{ thisPanel.expanded ? (list.title | slice:0:-3)   : list.title  }}
+
+      </mat-panel-title>
+
+
+
+
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <mat-accordion>
