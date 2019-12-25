@@ -15,7 +15,7 @@ import { List } from '../../classes/list';
 export class ListComponent implements OnInit {
 
 list: List = {
-title: "* justin diaz ...",
+title: "* Portfolio ...",
 content: "blablablabla"
 }
 
