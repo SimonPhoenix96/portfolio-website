@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { List } from '../../classes/list';
+import { SecurityContext } from '@angular/core';
+
 
 
 @Component({
@@ -15,17 +17,17 @@ import { List } from '../../classes/list';
 export class ListComponent implements OnInit {
 
 aboutText: string[] = [
- "<img class = \"PicOfMe\" src=\"assets/img/me.jpg\" alt=\"\"> <br><br> Name: Justin Diaz <br><br> Age: 24 <br><br><br><br> Just a humble old (Business)-Informatics Student <br> trying make a living off of stuff I learned from <br> watching Indian Youtube Tutorials."
+ "<img class = \"PicOfMe\" src=\"assets/img/me.jpg\" alt=\"\"> <br><br> Location: Nürnberg  <br><br> Name: Justin Diaz <br><br> Age: 24 <br><br><br><br> Just a humble old (Business)-Informatics Student <br> trying to make a living off of stuff I learned from <br> watching Indian Youtube Tutorials."
 ]
 aboutTextJoined = this.aboutText.join("");
 contactURLS: string[] = [
-  "<a href=’https://github.com/SimonPhoenix96/’>- Github</a><br><br>", "<a href=’https://de.linkedin.com/in/justin-diaz-39b21b186>- Linkedin</a><br><br>","<a href=’mailto:mail@justindiaz.xyz’>- Email</a><br><br>",
+  "<a href=\"https://github.com/SimonPhoenix96/\" {{appExternalUrl}}>- Github</a><br><br>", "<a href=\"https://de.linkedin.com/in/justin-diaz-39b21b186\" {{appExternalUrl}}>- Linkedin</a> <br><br>","<a href=\"mailto:mail@justindiaz.xyz\" {{appExternalUrl}}>- Email</a><br><br>"
 ]
 
 contactURLSJoined = this.contactURLS.join("");
 
 test: string[] = [
-  "1","2","3"
+  "test"
 ]
 
 testJoined = this.test.join("");
@@ -38,9 +40,11 @@ list: List[] = [
 ]
 
 
-  constructor() { }
+
+
 
   ngOnInit() {
+
 
   }
 
