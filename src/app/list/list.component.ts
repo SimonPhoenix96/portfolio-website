@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { List } from '../../classes/list';
-import { SecurityContext } from '@angular/core';
+
 
 
 
@@ -21,7 +21,7 @@ aboutText: string[] = [
 ]
 aboutTextJoined = this.aboutText.join("");
 contactURLS: string[] = [
-  "<a href=\"https://github.com/SimonPhoenix96/\" {{appExternalUrl}}>- Github</a><br><br>", "<a href=\"https://de.linkedin.com/in/justin-diaz-39b21b186\" {{appExternalUrl}}>- Linkedin</a> <br><br>","<a href=\"mailto:mail@justindiaz.xyz\" {{appExternalUrl}}>- Email</a><br><br>"
+  "<a href=\"https://github.com/SimonPhoenix96/\" {{appExternalUrl}} target=\"_blank\">- Github</a><br><br>", "<a href=\"https://de.linkedin.com/in/justin-diaz-39b21b186\" {{appExternalUrl}} target=\"_blank\">- Linkedin</a> <br><br>","<a href=\"mailto:mail@justindiaz.xyz\" {{appExternalUrl}} target=\"_blank\">- Email</a><br><br>"
 ]
 
 contactURLSJoined = this.contactURLS.join("");
