@@ -14,10 +14,12 @@ import { List } from '../../classes/list';
 
 export class ListComponent implements OnInit {
 
-list: List = {
-title: "* Portfolio ...",
-content: "blablablabla"
-}
+list: List[] = [
+  {title: "* About ...", content: "blablablabla"},
+  {title: "* Portfolio ...", content: "blablablabla"},
+{title: "* Services ...", content: "blablablabla"},
+{title: "* Contact ...", content: "blablablabla"},
+]
 
   constructor() { }
 
