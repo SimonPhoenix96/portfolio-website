@@ -1,90 +1,123 @@
+@import url("assets/css/scanlines.css");
 @font-face {
   font-family: Px437_IBM_Conv;
-  src:     url(/assets/fonts/Px437_IBM_Conv.ttf) format('truetype');
-
+  src: url(/assets/fonts/Px437_IBM_Conv.ttf) format('truetype');
 }
 
 @font-face {
-
   font-family: IBM-Logo;
-  src:     url(/assets/fonts/IBM-Logo.ttf) format('truetype');
+  src: url(/assets/fonts/IBM-Logo.ttf) format('truetype');
+}
+
+
+/* https: //www.thesitewizard.com/css/mobile-friendly-responsive-design.shtml */
+
+.TopTitle {
+  font-family: IBM-Logo;
+  font-size: 45px;
+  font-weight: 200;
+  color: #00AA00;
+  margin-top: 1%;
+  margin-left: -1%;
 
 }
 
 
+.ListTitle {
+  font-family: Px437_IBM_Conv;
+  font-size: 16px;
+  color:#009900;
+  margin-top:5%;
+  margin-left:  -25px;
+  opacity: 0.7;
 
-
-.TopTitle{
-font-family: IBM-Logo;
-font-size:45px;
-font-weight: 50;
-color: #009900;
-padding-bottom: 5%;
-margin-top: -3%;
-margin-left: -3%
 }
 
-.ListTitle{
-font-family: Px437_IBM_Conv;
-font-size:16px;
-color: #009900;
-padding-left: 1%;
+.ListTitle:hover{
+  color: #00AA00;
+  opacity: 1
 }
 
-.ListContent{
-font-family: Px437_IBM_Conv ;
-font-size:14px;
-color:  #990000;
-margin-top: 10px;
-padding-left: 3%;
-padding-bottom: 3px;
+
+.AboutText {
+  position: sticky;
+  font-family: Px437_IBM_Conv;
+  font-size: 11px;
+  color: #AA0000;
+  padding-left: 1%;
+  padding-top: -5%;
+
+
 }
 
-.PicOfMe{
-  float:right;
-  display:inline;
-  margin:0 0 10px 20px;
-  width: 50%;
+.ProjectsText {
+  position: sticky;
+  font-family: Px437_IBM_Conv;
+  font-size: 11px;
+  color: #AA0000;
+  padding-left: 1%;
+  padding-top: -5%
+}
+
+.ContactURLS{
+  position: sticky;
+  font-family: Px437_IBM_Conv, monospace;
+  color: #00AAAA;
+  text-decoration: none;
+  opacity: 0.7;
+  padding-left: 1%;
+
+}
+
+.PicOfMe {
+  float: right;
+  display: inline;
+  /* margin: 0 0 10px 20px; */
+  width: 20%;
+  padding-right: 10%;
 }
 
 .mat-expansion-indicator {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
 }
 
 #page-container {
   position: relative;
-  min-height: 100vh;
-  max-width: 100vh
+  min-height: 88vh;
+
+
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+  padding-bottom: 2.5rem;
+  /* Footer height */
 }
 
-#footer{
+#footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
+  height: 2.5rem;
+  /* Footer height */
   text-align: center;
-  padding-left: 35%;
-font-family: Px437_IBM_Conv, monospace;
-font-weight: 200;
-font-size:11px;
-color: #009900
-
+  font-family: Px437_IBM_Conv, monospace;
+  font-weight: 200;
+  font-size: 8px;
+  color: #009900;
+  opacity: 0.9;
 }
-
-
 
 body {
-    padding-left: 50px;
-    padding-top: 50px;
-    background-color: black;
+  padding-left: 50px;
+  padding-top: 50px;
+  background-color: black;
 }
 
-a{
+a {
   font-family: Px437_IBM_Conv, monospace;
-  color: #990000;
+  color: #00AAAA;
   text-decoration: none;
+  opacity: 0.7;
 }
+a:hover {
+  opacity: 1}
