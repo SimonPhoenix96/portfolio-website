@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { List } from '../../classes/list';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  List
+} from '../../classes/list';
 
 
 
@@ -16,28 +21,42 @@ import { List } from '../../classes/list';
 
 export class ListComponent implements OnInit {
 
-aboutText: string[] = [
- "<img class = \"PicOfMe\" src=\"assets/img/me.jpg\" alt=\"\"> <br><br> Location: Nürnberg  <br><br> Name: Justin Diaz <br><br> Age: 24 <br><br><br><br> Just a humble old (Business)-Informatics Student <br> trying to make a living off of stuff I learned from <br> watching Indian Youtube Tutorials."
-]
-aboutTextJoined = this.aboutText.join("");
-contactURLS: string[] = [
-  "<a href=\"https://github.com/SimonPhoenix96/\" {{appExternalUrl}} target=\"_blank\">- Github</a><br><br>", "<a href=\"https://de.linkedin.com/in/justin-diaz-39b21b186\" {{appExternalUrl}} target=\"_blank\">- Linkedin</a> <br><br>","<a href=\"mailto:mail@justindiaz.xyz\" {{appExternalUrl}} target=\"_blank\">- Email</a><br><br>"
-]
+  aboutText: string[] = [
+    "<div class = \"AboutText\"> <img class = \"PicOfMe\" src=\"assets/img/me.jpg\" alt=\"\"> <br> Location: Nürnberg  <br><br> Name: Justin Diaz <br><br> Age: 24 <br><br><br><br> Just a humble ol' (Business)-Informatics Student <br> trying to make a living off of stuff I learned from <br> watching Indian Youtube Tutorials.</div>"
+  ]
+  aboutTextJoined = this.aboutText.join("");
+  contactURLS: string[] = [
+    "<br> <div class = \"ContactURLS\"> - <a href=\"https://github.com/SimonPhoenix96/\" {{appExternalUrl}} target=\"_blank\">Github</a><br><br><br>", "- <a href=\"https://de.linkedin.com/in/justin-diaz-39b21b186\" {{appExternalUrl}} target=\"_blank\">Linkedin</a> <br><br><br>", "- <a href=\"mailto:mail@justindiaz.xyz\" {{appExternalUrl}} target=\"_blank\">e-mail</a><br><br><br><div>"
+  ]
 
-contactURLSJoined = this.contactURLS.join("");
+  contactURLSJoined = this.contactURLS.join("");
 
-test: string[] = [
-  "test"
-]
+  projectsText: string[] = [
+    "<br> <div class = \"ProjectsText\"> WIP! Meanwhile check my <a href=\"https://github.com/SimonPhoenix96/\" {{appExternalUrl}} target=\"_blank\">Github</a> where I keep my code.</div>"
+  ]
 
-testJoined = this.test.join("");
+  projectsTextJoined = this.projectsText.join("");
 
-list: List[] = [
-  {title: "* About ...", content: this.aboutTextJoined},
-  {title: "* Projects ...",content: this.testJoined},
-  {title: "* Services ...", content: this.testJoined},
-  {title: "* Contact ...",content: this.contactURLSJoined},
-]
+  // servicesText: string[] = [
+  //   "WIP!"
+  // ]
+  //
+  // servicesTextJoined = this.servicesText.join("");
+
+  list: List[] = [{
+      title: "* About ...",
+      content: this.aboutTextJoined
+    },
+    {
+      title: "* Projects ...",
+      content: this.projectsTextJoined
+    },
+    // {title: "* Services ...", content: this.servicesTextJoined},
+    {
+      title: "* Contact ...",
+      content: this.contactURLSJoined
+    },
+  ]
 
 
 
