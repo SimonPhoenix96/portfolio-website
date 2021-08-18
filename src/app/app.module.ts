@@ -12,6 +12,7 @@ import {
   MatExpansionModule,
   MatButtonModule
 } from '@angular/material';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -23,7 +24,8 @@ import {
     ListComponent,
     SafePipe,
     NotFoundComponent,
-    ExternalUrlDirective
+    ExternalUrlDirective,
+    FooterComponent
 
   ],
   imports: [
