@@ -1,18 +1,18 @@
 <span class="TopTitle">**** Justin Diaz ****</span>
-<mat-accordion [multi]="false" >
-  <mat-expansion-panel #thisPanel *ngFor="let list of list" >
+<mat-accordion  [multi]="false">
+  <mat-expansion-panel  #thisPanel *ngFor="let list of list" >
 
     <mat-expansion-panel-header class="ListTitle" >
 
-      <mat-panel-title>
-        <div class = "ListTitleExpanded">
+      <mat-panel-title >
+        <div >
         {{ thisPanel.expanded ? (list.title | slice:0:-3)   : list.title  }}
         </div>
       </mat-panel-title>
 
-    </mat-expansion-panel-header>
+    </mat-expansion-panel-header >
 
-    <div [innerHTML]="list.content | safe: 'html'"></div>
+    <div class = "ListTitleExpanded" [innerHTML]="list.content | safe: 'html'"></div>
   </mat-expansion-panel>
 
 </mat-accordion>
