@@ -83,7 +83,7 @@
   opacity: 0;
   z-index: 100;
   pointer-events: none;
-  animation: flicker 0.9s infinite;
+  animation: flicker 1s infinite;
 }
 .crt::before {
   content: " ";
@@ -136,9 +136,9 @@
 	100%{
     transform:rotate(0deg);
     text-shadow:
-     16px -4px 0px rgba(255,0,0,0.5),
-     -10px -4px 0px rgba(0,255,0,0.5),
-     4px -4px 0px rgba(0,0,255,0.5);
+     8px -2px 0px rgba(255,0,0,0.5),
+     -5px -2px 0px rgba(0,255,0,0.5),
+     2px -2px 0px rgba(0,0,255,0.5);
     opacity:1;
   }
 }
