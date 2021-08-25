@@ -1,12 +1,12 @@
 @import url("assets/css/scanlines.css");
 @font-face {
   font-family: Px437_IBM_Conv;
-  src: url(/assets/fonts/Px437_IBM_Conv.ttf) format('truetype');
+  src: url(assets/fonts/Px437_IBM_Conv.ttf) format('truetype');
 }
 
-@font-face {
+@font-face { 
   font-family: IBM-Logo;
-  src: url(/assets/fonts/IBM-Logo.ttf) format('truetype');
+  src: url(assets/fonts/IBM-Logo.ttf) format('truetype');
 }
 
 
@@ -32,7 +32,7 @@
   padding-bottom: 1%;
   padding-right: 1%; 
   /* margin-left: 2%; */
-  margin-bottom: -2%;
+  margin-bottom: -2.5%;
   z-index: 5;
  }
  .LadBibleImage {
@@ -78,41 +78,49 @@
 
 }
  .LadBibleText:hover{
-   color: #FFFFFF;
+  color: #FFFFFF;
    opacity: 1;
    z-index: 2;
 
  } 
  
  /* TODO add href that links to invidious search invidious.com/search?=artist-title */
-.NowPlaying { 
-  pointer-events:true;
-  position: absolute;
+ .NowPlayingImage {
   text-align: center;
+  min-width: fit-content;
+  min-height: fit-content;
+  max-width: 100%;
+  max-height: fit-content;
+  margin-left: -95%;
+  margin-bottom: -1.5%;
+  background-color: #ff001900;
+  position: absolute; 
+  opacity: 0.7;
+  bottom: 0;
+  right: 0;
+
+  z-index: 3;
+  background-color: #ff001900;
+}
+.NowPlayingImage:hover {
+  opacity: 1;
+
+}
+
+.NowPlayingText {
+  cursor: pointer; 
   font-family: IBM-Logo, monospace;
   font-weight: 200;
   font-size: 16px;
   color: #FFFFFF;
   opacity: 0.7;
-  bottom: 0;
-  right: 0;
-  max-width: fit-content;
-  max-height: fit-content;
-  min-width: fit-content; 
-  min-height: fit-content;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 1%; 
-  margin-right: 2%;
-  margin-bottom: -1%;
-  width: -50%; 
-  z-index: 3;
-  background-color: #ff001900;
+ 
 }
 
-.NowPlaying:hover{
-  color: #FFFFFF;
+
+.NowPlayingText:hover{
   opacity: 1;
+  color: #C8B907;
 }
 
 
@@ -154,10 +162,12 @@
 }
 
 .ListTitle:hover{
-  color: #FFFFFF;
   opacity: 1;
   z-index: 2;
+  color: #ffffff;
+  
   background-color: #050d6800;
+
 }
 
 
@@ -253,13 +263,14 @@ a {
   text-decoration: none;
   opacity: 0.7;
   z-index: 2;
+  background-color: #050d6800;
 
 
 }
 a:hover {
   opacity: 1;
   z-index: 2;
-
+  background-color: #050d6800;
 }
 
 
