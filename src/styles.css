@@ -11,61 +11,110 @@
 
 
 /* https: //www.thesitewizard.com/css/mobile-friendly-responsive-design.shtml */
+.bottom {
+  border: 1px solid red;
+}
+.page-container.bottom {
+  border: 1px solid red;
+}
+.bottom.container {
+  
+  position: relative;  /* <---------- required */
+  width: 100%;  /* <----------------- required */
+  height: 10px; /* <---------------- required */
+  /* bottom: 0; */
+  /* margin-bottom: -100%; */
 
+}
 
-#footer {
-  position: absolute;
-  /* display: flexbox; */
+.bottom.left {
+  /* padding-top: 1%;
+  padding-right: 1%;
+  padding-left: 1%; */
   text-align: left;
+  position: absolute;  /* <---------- required */
+  left: 0; /*   <--------------------- required
+  /*top: 0;  /* <---------------------- required */
+  bottom: 0;  /* <------------------- required */
+  width: 50%;  /* <------------------ required */
+  box-sizing: border-box;  /* <------ required */
+}
+
+.bottom.right {
+  /* padding-top: 1%;
+  padding-right: 1%;
+  padding-left: 1%; */
+  /* display: inline; */
+
+  text-align: right;
+  position: absolute;  /* <---------- required */
+  /* top: 0;  /* <---------------------- required */
+  right: 0;  /* <-------------------- required */
+  bottom: 0;  /* <------------------- required */
+  width: 50%;  /* <------------------ required */
+  /* height: fit-content; */
+  box-sizing: border-box;  /* <------ required */
+  /* margin-bottom: -50%; */
+
+}
+
+.footer {
+  /* display: flexbox; */
   font-family: Px437_IBM_Conv, monospace;
   font-weight: 200;
   font-size: 60%;
   color: #FFFFFF;
   opacity: 0.7;
-  bottom: 0;
-  left: 0;
-  max-width: fit-content;
-  max-height: fit-content;
+  /* text-align: left; */
+  /* position: sticky; 
   min-width: fit-content;
   min-height: fit-content;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%; 
-  /* margin-left: 2%; */
-  margin-bottom: -2.5%;
+  max-width: 100%;
+  max-height: fit-content;
+   margin-right: 75%; */
+   /* margin-bottom: 1.5%; */
+   background-color: #ff001900;
+   /* bottom: 0; */
+   /* right: 0; */
+  /* padding-top: 2%; */
+  
   z-index: 5;
  }
  .LadBibleImage {
   pointer-events:none;  
   max-width: 30%;
   max-height: fit-content; 
-  text-align: center;
+  /* text-align: center; */
   opacity: 0.7;
-  z-index: 0;
+  /* z-index: 0; */
  }
 
  
  .LadBible {  
+  border: 1px solid red;
+
+  padding-left: 0.1%;
+  padding-right: 5%;
   pointer-events:true;
    font-family: Px437_IBM_Conv;
    color:#FFFFFF; /*#FFFFFF*/
    /* top: -10%;
    right: 2%; */
    opacity: 0.7;
-   position:absolute;
-   text-align: left;
-   max-width: 30%;
-   max-height: 30%; 
-   min-width: 10%;
-   min-height: 10%;
-   bottom: 0;
-   left: 0;
-   padding-top: 3%;
-   padding-bottom: 1%;
-   padding-right: 1%; 
-   /* margin-left: 2%; */
-   margin-bottom: -2%;
-   z-index: 2;
+   /* position:sticky; */
+   /* position: absolute;  */
+   /* text-align: left; */
+   /* min-width: fit-content; */
+    /* min-height: fit-content; */
+    /* max-width: 100%; */
+    /* max-height: 50%; */
+    /* margin-right: 83%; */
+    /* margin-bottom: -0.5%; */
+    background-color: #ff001900;
+    /* bottom: 0; */
+    /* right: 0; */
+    /* padding-top: 2%; */
+    /* z-index: 2; */
    /* bottom: 0%; */
    /* left: 35%; */
  }
@@ -74,33 +123,36 @@
   color: #FFFFFF;
   font-size: 90%;
   opacity: 0.7;
-  z-index: 2;
+  /* z-index: 2; */
 
 }
  .LadBibleText:hover{
   color: #FFFFFF;
    opacity: 1;
-   z-index: 2;
+   /* z-index: 2; */
 
  } 
  
  /* TODO add href that links to invidious search invidious.com/search?=artist-title */
  .NowPlayingImage {
-  text-align: center;
-  min-width: fit-content;
-  min-height: fit-content;
-  max-width: 100%;
-  max-height: fit-content;
-  margin-left: -95%;
-  margin-bottom: -1.5%;
-  background-color: #ff001900;
-  position: absolute; 
-  opacity: 0.7;
-  bottom: 0;
-  right: 0;
+  border: 1px solid red;
 
-  z-index: 3;
+   pointer-events: none;
+   /* position: absolute; */
+  text-align: center;
+  min-width: fit-content; 
+  min-height: fit-content;
+  max-width: fit-content;
+  max-height: fit-content; 
+  /* margin-left: -85%; */
+  /* margin-bottom: 17.5%; */
   background-color: #ff001900;
+  /* position: sticky;  */
+  opacity: 0.7;
+  /* bottom: 0;
+  right: 0;  */
+
+  /* z-index: 3; */
 }
 .NowPlayingImage:hover {
   opacity: 1;
@@ -108,6 +160,7 @@
 }
 
 .NowPlayingText {
+  pointer-events: all;
   cursor: pointer; 
   font-family: IBM-Logo, monospace;
   font-weight: 200;
@@ -124,17 +177,36 @@
 }
 
 
+.NowPlayingGif {
+  pointer-events: all;
+  cursor: pointer; 
+  color: #FFFFFF;
+  opacity: 0.7;
+  height: 25px;
+  width: 100%;
+ 
+}
+
+
+.NowPlayingGif:hover{
+  opacity: 1;
+  color: #C8B907;
+}
+
+
+
 
 
 
 
 .TopTitle {
   font-family: IBM-Logo;
-  font-size: 45px;
+  font-size: clamp(16px, 4vw, 39px);
+
   font-weight: 200;
   color: #FFFFFF; /*#00AA00;*/
-  margin-top: 1%;
-  margin-left: -1%;
+  /* margin-top: -1%; */
+  /* margin-left: -1%; */
   max-width: fit-content;
   max-height: fit-content;
   z-index: 2;
@@ -144,14 +216,14 @@
 .ListTitle {
   position: sticky;
   font-family: Px437_IBM_Conv;
-  font-size: 16px;
+  font-size: clamp(8px, 7vw, 14px);
   color:#FFFFFF; /*#FFFFFF*/
-  margin-top:5%;
+  margin-top:6%;
   margin-left:  -25px;
   opacity: 0.7;
   max-width: fit-content;
   max-height: fit-content;
-  margin-bottom: -0.5%;  
+  margin-bottom: 0%;  
   z-index: 2;
   background-color: #ff101000;
 }
@@ -174,7 +246,8 @@
 .AboutText {
   position: sticky;
   font-family: Px437_IBM_Conv;
-  font-size: 11px;
+  font-size: clamp(5px, 3vw, 10px);
+
   color: #FFFFFF; /*#FFFFFF*/
   padding-left: 1%;
   padding-top: -5%;
@@ -190,7 +263,7 @@
 .ProjectsText {
   position: sticky;
   font-family: Px437_IBM_Conv;
-  font-size: 11px;
+  font-size: clamp(5px, 3vw, 10px);
   color: #FFFFFF;
   padding-left: 1%;
   padding-top: -5%;
@@ -202,6 +275,7 @@
 .ContactURLS{
   position: sticky;
   font-family: Px437_IBM_Conv, monospace;
+  font-size: clamp(5px, 3vw, 10px);
   color: #B9B156; /*#00AAAA*/
   text-decoration: none;
   opacity: 1;
@@ -232,32 +306,49 @@
   z-index: 2;
 }
 
-#page-container {
-  position: relative;
-  min-height: 88vh;
+.page-container {
+  border: 7px solid green;
+
+  /* padding-left: 7%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-right: 7%; */
+  top: 3%;
+  left: 3%;
+  bottom: 3%;
+  right: 3%;
+  position: fixed;
   z-index: 2;
 
-
-
+  
+  
 }
 
-#content-wrap {
-  padding-bottom: 2.5rem;
+/* .content-wrap {
+  /* padding-bottom: 2.5rem; */
   /* Footer height */
-  z-index: 2;
+  /* z-index: 2; */
+  
+  /* } */
+  
+  
+  
+  .body {
+    border: 7px solid purple;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    z-index: 2;
+    
+  }
 
-}
+  .body::-webkit-scrollbar {
+    display: none;
+  }
 
-
-
-body {
-  padding-left: 3%;
-  padding-top: 3%;
-  z-index: 2;
-
-}
-
-a {
+.a {
   font-family: Px437_IBM_Conv, monospace;
   color: #C8B907;
   text-decoration: none;
@@ -267,7 +358,7 @@ a {
 
 
 }
-a:hover {
+.a:hover {
   opacity: 1;
   z-index: 2;
   background-color: #050d6800;
@@ -321,7 +412,7 @@ a:hover {
 	animation-name: fadeInGodsaysOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 12.5s;
+	animation-duration: 1;
 }
 
 @keyframes fadeInGodsaysOpacity {
@@ -335,3 +426,5 @@ a:hover {
 		opacity: 1; 
 	}
 }
+
+
