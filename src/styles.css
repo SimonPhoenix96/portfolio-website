@@ -243,7 +243,6 @@ max-height:100%;
 
 
 
-
 .mat-expansion-panel{
   font-family: Px437_IBM_Conv;
   font-size: clamp(10px, 5vw,16px);
@@ -256,15 +255,16 @@ max-height:100%;
   height: fit-content;
   position: absolute;
   /* padding-bottom: 60px; */
-  padding-top: clamp(20px, 80vw, 100px);
-  padding-right: clamp(10px, 80vw, 100px);
+  padding-top: clamp(10px, 10vw, 100px);
+  padding-right: clamp(10px, 10vw, 100px);
   left: 0;
 
 
 }
 .mat-expansion-panel-header{
   background-color: #050d6800;
-  
+  width: fit-content;
+  height: fit-content;
   padding-bottom: 10%;
   padding-top: 10%;
 
@@ -272,7 +272,8 @@ max-height:100%;
 
 .mat-expansion-indicator {
   background-color: #050d6800;
-
+  width: fit-content;
+  height: fit-content;
   color: rgba(0, 0, 0, 0);
 }
 
