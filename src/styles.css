@@ -16,8 +16,8 @@
   border: 1px solid red;
 } */
 .top-container {
-  border: 3px solid rgb(11, 239, 247);
-  height: 60%;
+  /* border: 3px solid rgb(11, 239, 247); */
+  height: 80%;
   /* padding-left: 7%;
   padding-top: 7%;
   padding-bottom: 7%;
@@ -28,6 +28,7 @@
   right: 3%; */
   position: relative;
   z-index: 2;
+  top:0;
   background-color: #050d6800;
 
   /* argin-bottom: -100%; */
@@ -35,8 +36,8 @@
 }
 
 .bottom-container {
-  border: 4px solid rgb(103, 5, 145);
-  height: 40%;
+  /* border: 4px solid rgb(103, 5, 145); */
+  height: 20%;
   /* padding-left: 7%;
   padding-top: 7%;
   padding-bottom: 7%;
@@ -52,7 +53,7 @@
 }
 
 .bottom-container-left {
-  border: 4px solid rgb(255, 115, 153);
+  /* border: 4px solid rgb(255, 115, 153); */
   height: 100%;
   /* padding-top: 1%;
   padding-right: 1%;
@@ -67,7 +68,7 @@
 }
 
 .bottom-container-right {
-  border: 4px solid rgb(255, 255, 255);
+  /* border: 4px solid rgb(255, 255, 255); */
   /* padding-top: 1%;
   padding-right: 1%;
   padding-left: 1%; */
@@ -89,22 +90,26 @@
 .footer {
   /* display: flexbox; */
   font-family: Px437_IBM_Conv, monospace;
+  font-size: clamp(5px, 4vw, 7px);
+
   font-weight: 200;
-  font-size: 60%;
+  /* font-size: 60%; */
   color: #FFFFFF;
   opacity: 0.7;
+  position: absolute;
   /* text-align: left; */
-  /* position: sticky;
-  min-width: fit-content;
+  /* position: absolute; */
+  /* min-width: fit-content;
   min-height: fit-content;
   max-width: 100%;
   max-height: fit-content;
    margin-right: 75%; */
    /* margin-bottom: 1.5%; */
    background-color: #ff001900;
-   /* bottom: 0; */
    /* right: 0; */
   /* padding-top: 2%; */
+  bottom: 0;
+  z-index: 0;
  }
  .LadBibleImage {
   pointer-events:none;
@@ -115,7 +120,7 @@
  }
 
  .LadBibleContainer {
-  border: 4px solid rgb(171, 159, 0);
+  /* border: 4px solid rgb(171, 159, 0); */
   font-size: clamp(5px, 4vw, 13px);
   /* padding-left: 0.1%;
   padding-right: 5%; */
@@ -140,6 +145,7 @@
     /* padding-top: 2%; */
    /* bottom: 0%; */
    /* left: 35%; */
+   z-index: 1;
  }
 
  .LadBibleText{
@@ -166,12 +172,9 @@
 /*}*/ 
 
 .NowPlayingContainer {
-  font-size: clamp(1px,10vw, 15px);
-  font-family: IBM-Logo, monospace;
-  font-weight: 200;
-  color: #FFFFFF;
 
-  border: 4px solid rgb(92, 67, 255);
+
+  /* border: 4px solid rgb(92, 67, 255); */
 
   bottom: 0;
   opacity: 0.7;
@@ -184,7 +187,7 @@
 }
 
 .NowPlayingImage {
-pointer-events: none;
+/* pointer-events: none; */
 width:auto;
 height:auto;
 max-width:100%;
@@ -196,16 +199,22 @@ max-height:100%;
 .NowPlayingText {
   pointer-events: all;
   cursor: pointer;
+  font-size: clamp(1px,10vw, 15px);
+  font-family: IBM-Logo, monospace;
+  font-weight: 200;
+  color: #FFFFFF;
+  bottom: 0;
+  position: relative;
 
 }
 
 .NowPlayingText:hover{
   opacity: 1;
   color: #C8B907;
+
 }
 
 .NowPlayingGif {
-  pointer-events: none;
   cursor: pointer;
   color: #FFFFFF;
   opacity: 0.7;
@@ -220,59 +229,64 @@ max-height:100%;
 
 .TopTitle {
   font-family: IBM-Logo;
-  font-size: clamp(16px, 4vw, 39px);
-
+  font-size: clamp(16px, 10vw, 40px);
   font-weight: 200;
   color: #ffffff; /*#00AA00;*/
   /* margin-top: -1%; */
   /* margin-left: -1%; */
-  max-width: fit-content;
-  max-height: fit-content;
+  padding-bottom: 15px;
+  /* max-width: fit-content;
+  max-height: fit-content; */
 }
 
-.mat-accordion, .mat-panel-title, .mat-expansion-indicator,.mat-expansion-panel-header,.mat-expansion-panel, .mat-expanded {
 
-  background-color: #050d6800;
 
-}
-mat-accordion:after, mat-panel-title:after, mat-expansion-indicator:after,mat-expansion-panel-header:after,mat-expansion-panel:after,mat-expansion-panel-content:after {
 
-  background-color: #050d6800;
-
-}
 .mat-expansion-panel{
-  border: 7px solid rgb(255, 0, 0);
-  width: auto;
-  height: auto;
-  padding-bottom: -4%;
-}
-.mat-expansion-panel-content{
-  border: 7px solid rgb(247, 0, 255);
-  width: auto;
-  height: auto;
-  padding-bottom: -10%;
-}
-.ListTitle {
-  border: 7px solid rgb(239, 205, 112);
-  position: sticky;
   font-family: Px437_IBM_Conv;
-  font-size: clamp(8px, 7vw, 14px);
+  font-size: clamp(10px, 5vw,16px);
   color:#FFFFFF; /*#FFFFFF*/
-  margin-top:6%;
-  margin-left:  -25px;
   opacity: 0.7;
-  max-width: fit-content;
-  max-height: fit-content;
-  margin-bottom: 0%;
-  /* background-color: #ff101000; */
+  
+  /* border: 7px solid rgb(245, 118, 0); */
+  background-color: #050d6800;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  /* padding-bottom: 60px; */
+  padding-top: clamp(20px, 80vw, 100px);
+  padding-right: clamp(10px, 80vw, 100px);
+  left: 0;
+
+
 }
-.ListTitleExpanded {
-  border: 7px solid yellow;
-    /* background-color: #ff101000; */
-    max-width: fit-content;
-    max-height: fit-content;
+.mat-expansion-panel-header{
+  background-color: #050d6800;
+  
+  padding-bottom: 10%;
+  padding-top: 10%;
+
 }
 
+.mat-expansion-indicator {
+  background-color: #050d6800;
+
+  color: rgba(0, 0, 0, 0);
+}
+
+.ListTitleExpanded {
+  /* border: 7px solid yellow; */
+    /* background-color: #ff101000; */
+    background-color: #050d6800;
+
+}
+
+.ListTitle{
+
+  background-color: #050d6800;
+  /* background-color: #050d6800; */
+
+}
 .ListTitle:hover{
   opacity: 1;
   color: #ffffff;
@@ -318,8 +332,8 @@ mat-accordion:after, mat-panel-title:after, mat-expansion-indicator:after,mat-ex
   opacity: 1;
   padding-left: 1%;
   padding-top: 1.5%;
-  /* max-width: fit-content; */
-  /* max-height: fit-content; */
+  width: fit-content;
+  background-color: #050d6800;
 
 }
 
@@ -328,18 +342,16 @@ mat-accordion:after, mat-panel-title:after, mat-expansion-indicator:after,mat-ex
   /* position: absolute; */
   display: inline;
   /* margin: 0 0 10px 20px; */
-  width: 10%;
+  width: 35%;
   margin-right: 0.5%;
   margin-top: 1%;
 
 }
 
-.mat-expansion-indicator {
-  color: rgba(0, 0, 0, 0);
-}
+
 
 .app-container {
-  border: 7px solid green;
+  /* border: 7px solid green; */
 
   /* padding-left: 7%;
   padding-top: 7%;
@@ -358,7 +370,7 @@ mat-accordion:after, mat-panel-title:after, mat-expansion-indicator:after,mat-ex
 
 
 .body {
-  border: 7px solid purple;
+  /* border: 7px solid purple; */
   position: fixed;
   top: 0%;
   left: 0%;
@@ -389,7 +401,7 @@ mat-accordion:after, mat-panel-title:after, mat-expansion-indicator:after,mat-ex
   background-color: #050D68;
 
 }
-div.fade-in {
+.fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
@@ -430,7 +442,7 @@ div.fade-in {
 	animation-name: fadeInGodsaysOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 1;
+	animation-duration: 12s;
 }
 
 @keyframes fadeInGodsaysOpacity {

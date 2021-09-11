@@ -33,7 +33,7 @@ export class NowPlayingComponent implements OnInit {
 
       this.lastFMPlayedInvidiousLink = [
         
-        "<a onclick=\"window.open('https://youtube.com/search?q=", data['recenttracks']['track'][0]['artist']['#text'].replace(/'/gi, "").replace(/"/gi, "") , "%20" , data['recenttracks']['track'][0]['name'].replace(/'/gi, "").replace(/"/gi, "") ,"', '_blank', 'location=no,height=650,width=800,scrollbars=yes,status=no');\">","<div class=\"NowPlayingText\" ><a><span style=\" font-size: 120%;\"class=\"material-icons\">headphones</span><br>",data['recenttracks']['track'][0]['artist']['#text'].replace(/'/gi, "").replace(/"/gi, "") ,"<br><img class=\"NowPlayingGif\" src=\"https://i.gifer.com/YdBO.gif\" ><br>",data['recenttracks']['track'][0]['name'].replace(/'/gi, "").replace(/"/gi, ""),"</div></a>"
+        "<a onclick=\"window.open('https://youtube.com/search?q=", data['recenttracks']['track'][0]['artist']['#text'].replace(/'/gi, "").replace(/"/gi, "") , "%20" , data['recenttracks']['track'][0]['name'].replace(/'/gi, "").replace(/"/gi, "") ,"', '_blank', 'location=no,height=650,width=800,scrollbars=yes,status=no');\">","<div class=\"NowPlayingText\" ><span style=\" font-size: 120%;\"class=\"material-icons\">headphones</span><br>",data['recenttracks']['track'][0]['artist']['#text'].replace(/'/gi, "").replace(/"/gi, "") ,"<br><img class=\"NowPlayingGif\" src=\"https://i.gifer.com/YdBO.gif\" ><br>",data['recenttracks']['track'][0]['name'].replace(/'/gi, "").replace(/"/gi, ""),"</div></a>"
       ]
       this.lastFMPlayedInvidiousLinkJoined = this.lastFMPlayedInvidiousLink.join("");
       console.log(this.lastFMPlayedInvidiousLinkJoined)
