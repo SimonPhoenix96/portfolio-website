@@ -18,6 +18,8 @@ const routes: Routes = [
   },
 
   {path: 'list', component: ListComponent, canDeactivate: [deactivateGuard]},
+  // { path: '**', component: NotFoundComponent },  // Wildcard route for a 404 page
+
 
 ];
 

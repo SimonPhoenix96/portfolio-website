@@ -1,10 +1,7 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
-import {
-  List
-} from '../../classes/list';
+import {Component,OnInit} from '@angular/core';
+import {List} from '../../classes/list';
+import {MatListModule} from '@angular/material/list';
+import { SafePipe } from '../safe.pipe';
 
 
 let date: Date = new Date();

@@ -1,13 +1,21 @@
-<div class="fade-in">
+<ng-container class="fade-in" *ngIf="{
 
-            <div  *ngIf="lastFMPlayedCover$ as cover">
-                <div class="NowPlayingImage" ><img src='{{ cover }}'>
-                <br>
-                <div [innerHtml]=" lastFMPlayedInvidiousLinkJoined | safe: 'html'  "></div> 
-                <!-- {{ artist }} 
-                <br><img style="width: 100%;height: 10px; pointer-events:none;" src="https://i.gifer.com/YdBO.gif" ><br>
-                {{ title }} -->
-            </div>
-            </div>
-  
+    artist: lastFMPlayedArtist$ ,
+    cover: lastFMPlayedCover$ ,
+    title: lastFMPlayedTitle$
+
+} as observables;">
+    
+<!-- <img class=\"NowPlayingImage\" src=\"",data['recenttracks']['track'][0]['image'][2]['#text'] ,"\" > -->
+    <!-- <div  > -->
+    <div class="NowPlayingContainer">
+        <img src="{{ observables.cover }}"> 
+        <p [innerHtml]="lastFMPlayedInvidiousLinkJoined | safe: 'html'  "> 
+                <!-- {{ observables.artist }}  -->
+                <!-- <img style="width: 100%;height: 10px; pointer-events:none;" src="https://i.gifer.com/YdBO.gif" > -->
+                <!-- {{ observables.title }} -->
+        </p>
     </div>
+    <!-- </div> -->
+
+</ng-container>
