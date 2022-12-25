@@ -1,0 +1,16 @@
+---
+version: "2.1"
+services:
+  nginx:
+    image: lscr.io/linuxserver/nginx:latest
+    container_name: portfolio-website
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - "$HOME/devEnvironment/portfolio-website/dist/portfolio-website:/config/www"
+    ports:
+      - 180:80
+      - 1443:443
+    restart: unless-stopped
