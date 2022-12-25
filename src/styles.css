@@ -131,7 +131,7 @@
    right: 2%; */
    opacity: 0.7;
    /* position:sticky; */
-   position: absolute; 
+   position: absolute;
    /* text-align: left; */
    /* min-width: fit-content; */
     /* min-height: fit-content; */
@@ -169,7 +169,7 @@
   padding-bottom: 3%;
   /* width: fit-content;
   height: fit-content; */
-/*}*/ 
+/*}*/
 
 .NowPlayingContainer {
 
@@ -201,7 +201,7 @@ max-height:100%;
 .NowPlayingText {
   pointer-events: all;
   cursor: pointer;
-  font-size: clamp(1px,10vw, 15px);
+  font-size: clamp(0.2rem,10vw, 1rem);
   font-family: IBM-Logo, monospace;
   font-weight: 200;
   color: #FFFFFF;
@@ -231,7 +231,7 @@ max-height:100%;
 
 .TopTitle {
   font-family: IBM-Logo;
-  font-size: clamp(16px, 10vw, 40px);
+  font-size: clamp(18px, 5vw, 40px);
   font-weight: 200;
   color: #ffffff; /*#00AA00;*/
   /* margin-top: -1%; */
@@ -248,12 +248,10 @@ max-height:100%;
   font-size: clamp(10px, 5vw,16px);
   color:#FFFFFF; /*#FFFFFF*/
   opacity: 0.7;
-  
+
   /* border: 7px solid rgb(245, 118, 0); */
   background-color: #050d6800;
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
+  position: relative;
   /* padding-bottom: 60px; */
   padding-top: clamp(10px, 10vw, 100px);
   padding-right: clamp(10px, 10vw, 100px);
@@ -263,30 +261,28 @@ max-height:100%;
 }
 .mat-expansion-panel-header{
   background-color: #050d6800;
-  width: fit-content;
-  height: fit-content;
   padding-bottom: 10%;
   padding-top: 10%;
 
 }
 
 .mat-expansion-indicator {
-  background-color: #050d6800;
-  width: fit-content;
-  height: fit-content;
+  /* background-color: #050d6800; */
   color: rgba(0, 0, 0, 0);
 }
 
 .ListTitleExpanded {
   /* border: 7px solid yellow; */
     /* background-color: #ff101000; */
-    background-color: #050d6800;
+    /* background-color: #050d6800; */
 
 }
 
 .ListTitle{
 
   background-color: #050d6800;
+  font-size: clamp(0.5rem, 100%, 1rem);
+
   /* background-color: #050d6800; */
 
 }
