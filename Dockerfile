@@ -27,4 +27,8 @@ FROM nginx:latest
 COPY --from=build /usr/local/app/portfolio-website /usr/share/nginx/html
 
 # Expose port 80 - disable on akash build
+<<<<<<< HEAD
 EXPOSE 80
+=======
+# EXPOSE 80
+>>>>>>> master
