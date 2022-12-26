@@ -16,9 +16,12 @@ export class AboutMeComponent {
 
 
   aboutText: string[] = [
-    "<div class = \"AboutText\"> <img class = \"PicOfMe\" src=\"assets/img/me.jpg\" alt=\"\"> <br> Location: Nürnberg  <br><br> Name: Justin Diaz <br><br> Age: ", 
-    String(myAge),
-    " <br><br><br><br> I'm currently working as a Software Engineer</div>"
+    "<div class = \"about-container\">\
+      <div class = \"aboutText\"> <br> Location: Nürnberg  <br> Name: Justin Diaz <br> Age: ", 
+     String(myAge),
+      " <br><br><br><br> I'm currently working as a Engineer I</div>\
+      <img class = \"PicOfMe\"src=\"assets/img/me.jpg\" alt=\"\">\
+    </div>"
   ]
   aboutTextJoined = this.aboutText.join("");
 

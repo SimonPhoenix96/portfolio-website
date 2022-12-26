@@ -1,4 +1,3 @@
-<mat-accordion  [multi]="false">
     <mat-expansion-panel  #thisPanel *ngFor="let list of projectsList" >
   
       <mat-expansion-panel-header class="ListTitle" >
@@ -14,5 +13,4 @@
       <div class = "ListTitleExpanded" [innerHTML]="list.content | safe: 'html'"></div>
     </mat-expansion-panel>
   
-</mat-accordion>
   
