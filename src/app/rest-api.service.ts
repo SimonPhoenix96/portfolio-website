@@ -27,9 +27,8 @@ export class RestApiService {
 
   constructor(private http: HttpClient, private RestApi: RestApiService, private jsonp: HttpClientJsonpModule) { 
 
-  this.lastFMLastPlayed$ = timer(1, 60000).pipe(
+  this.lastFMLastPlayed$ = timer(1).pipe(
     switchMap(() => http.get<JSON>(lastFMUrl)),
-    retry(),
     share(),
     takeUntil(this.stopPolling)
   );

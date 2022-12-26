@@ -1,13 +1,18 @@
-
 <div class="top-container">
   <router-outlet></router-outlet>
-  <app-list></app-list>
-  </div>
-  <div class="bottom-container">
-    <!-- left bottom -->
-    <app-god-says class="bottom-container-left" ></app-god-says>
-    <app-footer class="bottom-container-left"></app-footer>
-    <!-- right bottom -->
-    <app-now-playing class="bottom-container-right"  ></app-now-playing>
+  <app-header></app-header>
 </div>
 
+<div class="middle-container">
+  <app-about-me></app-about-me>
+  <app-projects></app-projects>
+  <app-contact></app-contact>
+</div>
+
+<div class="bottom-container">
+  <!-- left bottom -->
+  <app-god-says class="bottom-container-left"></app-god-says>
+  <app-footer class="bottom-container-left"></app-footer>
+  <!-- right bottom -->
+  <app-now-playing class="bottom-container-right"></app-now-playing>
+</div>

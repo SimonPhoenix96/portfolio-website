@@ -1,7 +1,7 @@
 import { Routes, RouterModule, ActivatedRouteSnapshot } from '@angular/router';
 import { InjectionToken, NgModule } from '@angular/core';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ListComponent } from './list/list.component';
+import { HeaderComponent } from './header/header.component';
 
 
 const externalUrlProvider = new InjectionToken('externalUrlRedirectResolver');
@@ -17,7 +17,7 @@ const routes: Routes = [
     component: NotFoundComponent,
   },
 
-  {path: 'list', component: ListComponent, canDeactivate: [deactivateGuard]},
+  {path: 'list', component: HeaderComponent, canDeactivate: [deactivateGuard]},
   // { path: '**', component: NotFoundComponent },  // Wildcard route for a 404 page
 
 
