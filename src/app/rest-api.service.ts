@@ -5,7 +5,8 @@ import { switchMap, tap, share, retry, takeUntil } from 'rxjs/operators';
 
 
 const lastFMUrl = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=iilupefiascoii&api_key=ec9b73bf71bd369638cf52d90da4cefa&format=json';
-const godSaysURL = "https://labs.bible.org/api/?passage=random&type=json&callback=godSays";
+const godSaysURL = "http://quotes.rest/bible/verse.json";
+
 
 
 @Injectable({
@@ -16,8 +17,7 @@ export class RestApiService {
 
   private lastFMLastPlayed$: Observable<JSON>;
   private stopPolling = new Subject();
-
-  private godSays$: Observable<Object>;
+  private godSaysData$: Observable<JSON>;
 
   // headers = new HttpHeaders()
   //   .append('content-type','application/json')
@@ -33,12 +33,11 @@ export class RestApiService {
     takeUntil(this.stopPolling)
   );
     
-  this.godSays$ = timer(1, 1200000).pipe(
-    switchMap(() => http.jsonp(godSaysURL, 'callback')),
-    retry(),
+  this.godSaysData$ = timer(1).pipe(
+    switchMap(() => http.get<JSON>(godSaysURL)),
     share(),
     takeUntil(this.stopPolling)
-  ); 
+  );
 
   }
   
@@ -47,8 +46,8 @@ export class RestApiService {
     return this.lastFMLastPlayed$;
   }
   
-  getGodSays():Observable<Object>{
-    return this.godSays$; 
+  getGodSays(){
+    return this.godSaysData$;
   }
   
 

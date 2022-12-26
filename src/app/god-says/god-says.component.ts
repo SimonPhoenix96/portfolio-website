@@ -21,11 +21,18 @@ export class GodSaysComponent implements OnInit {
 
  ngOnInit(): void {
   this.RestApi.getGodSays().subscribe(data => {
-    this.ladBibleBook$ = data[0]['bookname'];
-    this.ladBibleVerse$ = data[0]['verse'];
-    this.ladBibleChapter$ = data[0]['chapter'];
-    this.ladBibleText$ = data[0]['text'].replace(/<[^>]+>/g, "").replace(/&copy;NET/gi, "");
-  })
+
+
+    console.log(JSON.stringify(data));
+    
+    this.ladBibleBook$ = data['contents']['book'];
+    this.ladBibleVerse$ = data['contents']['number'];
+    this.ladBibleChapter$ = data['contents']['chapter'];
+    this.ladBibleText$ = data['contents']['verse'];
+    
+    
+    
+    })
 
  }
 

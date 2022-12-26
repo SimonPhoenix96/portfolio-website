@@ -25,7 +25,7 @@ export class NowPlayingComponent implements OnInit {
 
   ngOnInit(): void {
     this.RestApi.getLastFMLastPlayed().subscribe(data => {
-      console.log(data['recenttracks']['track'][0])
+      // console.log(data['recenttracks']['track'][0])
       this.lastFMPlayedArtist$ = data['recenttracks']['track'][0]['artist']['#text'];
       this.lastFMPlayedTitle$ = data['recenttracks']['track'][0]['name'];
       this.lastFMPlayedCover$ = data['recenttracks']['track'][0]['image'][2]['#text'];
