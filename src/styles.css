@@ -1,4 +1,5 @@
 @import url("assets/css/scanlines.css");
+
 /* @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"; */
 @font-face {
   font-family: Px437_IBM_Conv;
@@ -28,12 +29,13 @@
   right: 3%; */
   position: relative;
   z-index: 2;
-  top:0;
+  top: 0;
   background-color: #050d6800;
 
   /* argin-bottom: -100%; */
 
 }
+
 .middle-container {
   /* border: 4px solid rgb(103, 5, 145); */
   height: 60%;
@@ -75,12 +77,17 @@
   padding-right: 1%;
   padding-left: 1%; */
   text-align: left;
-  position: absolute;  /* <---------- required */
-  left: 0; /*   <--------------------- required
+  position: absolute;
+  /* <---------- required */
+  left: 0;
+  /*   <--------------------- required
   /*top: 0;  /* <---------------------- required */
-  bottom: 0;  /* <------------------- required */
-  width: 50%;  /* <------------------ required */
-  box-sizing: border-box;  /* <------ required */
+  bottom: 0;
+  /* <------------------- required */
+  width: 50%;
+  /* <------------------ required */
+  box-sizing: border-box;
+  /* <------ required */
 }
 
 .bottom-container-right {
@@ -90,14 +97,19 @@
   padding-left: 1%; */
   /* display: inline; */
   text-align: right;
-  position: absolute;  /* <---------- required */
+  position: absolute;
+  /* <---------- required */
   /* top: 0;  /* <---------------------- required */
-  right: 0;  /* <-------------------- required */
-  bottom: 0;  /* <------------------- required */
-  width: 50%;  /* <------------------ required */
+  right: 0;
+  /* <-------------------- required */
+  bottom: 0;
+  /* <------------------- required */
+  width: 50%;
+  /* <------------------ required */
   height: 100%;
   /* height: fit-content; */
-  box-sizing: border-box;  /* <------ required */
+  box-sizing: border-box;
+  /* <------ required */
   /* margin-bottom: -50%; */
 }
 
@@ -120,59 +132,62 @@
   max-width: 100%;
   max-height: fit-content;
    margin-right: 75%; */
-   /* margin-bottom: 1.5%; */
-   background-color: #ff001900;
-   /* right: 0; */
+  /* margin-bottom: 1.5%; */
+  background-color: #ff001900;
+  /* right: 0; */
   /* padding-top: 2%; */
   bottom: 0;
   z-index: 0;
- }
- .LadBibleImage {
-  pointer-events:none;
+}
+
+.LadBibleImage {
+  pointer-events: none;
   max-width: 30%;
   max-height: fit-content;
   /* text-align: center; */
   opacity: 0.7;
- }
+}
 
- .LadBibleContainer {
+.LadBibleContainer {
   /* border: 4px solid rgb(171, 159, 0); */
   font-size: clamp(5px, 4vw, 13px);
   /* padding-left: 0.1%;
   padding-right: 5%; */
-  pointer-events:true;
-   font-family: Px437_IBM_Conv;
-   color:#FFFFFF; /*#FFFFFF*/
-   /* top: -10%;
+  pointer-events: true;
+  font-family: Px437_IBM_Conv;
+  color: #FFFFFF;
+  /*#FFFFFF*/
+  /* top: -10%;
    right: 2%; */
-   opacity: 0.7;
-   /* position:sticky; */
-   position: absolute;
-   /* text-align: left; */
-   /* min-width: fit-content; */
-    /* min-height: fit-content; */
-    /* max-width: 100%; */
-    /* max-height: 50%; */
-    /* margin-right: 83%; */
-    /* margin-bottom: -0.5%; */
-    background-color: #ff001900;
-    bottom: 0;
-    /* right: 0; */
-    /* padding-top: 2%; */
-   /* bottom: 0%; */
-   /* left: 35%; */
-   z-index: 1;
- }
+  opacity: 0.7;
+  /* position:sticky; */
+  position: absolute;
+  /* text-align: left; */
+  /* min-width: fit-content; */
+  /* min-height: fit-content; */
+  /* max-width: 100%; */
+  /* max-height: 50%; */
+  /* margin-right: 83%; */
+  /* margin-bottom: -0.5%; */
+  background-color: #ff001900;
+  bottom: 0;
+  /* right: 0; */
+  /* padding-top: 2%; */
+  /* bottom: 0%; */
+  /* left: 35%; */
+  z-index: 1;
+}
 
- .LadBibleText{
+.LadBibleText {
   color: #FFFFFF;
   font-size: 90%;
   opacity: 0.7;
 }
- .LadBibleText:hover{
+
+.LadBibleText:hover {
   color: #FFFFFF;
-   opacity: 1;
- }
+  opacity: 1;
+}
 
 
 /* .NowPlaying{
@@ -205,11 +220,11 @@
 }
 
 .NowPlayingImage {
-/* pointer-events: none; */
-width:auto;
-height:auto;
-max-width:100%;
-max-height:100%;
+  /* pointer-events: none; */
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
@@ -217,7 +232,7 @@ max-height:100%;
 .NowPlayingText {
   pointer-events: all;
   cursor: pointer;
-  font-size: clamp(0.2rem,10vw, 1rem);
+  font-size: clamp(0.2rem, 10vw, 1rem);
   font-family: IBM-Logo, monospace;
   font-weight: 200;
   color: #FFFFFF;
@@ -226,7 +241,7 @@ max-height:100%;
 
 }
 
-.NowPlayingText:hover{
+.NowPlayingText:hover {
   opacity: 1;
   color: #C8B907;
 
@@ -240,7 +255,7 @@ max-height:100%;
   width: 100%;
 }
 
-.NowPlayingGif:hover{
+.NowPlayingGif:hover {
   opacity: 1;
   color: #C8B907;
 }
@@ -249,7 +264,8 @@ max-height:100%;
   font-family: IBM-Logo;
   font-size: clamp(18px, 5vw, 40px);
   font-weight: 200;
-  color: #ffffff; /*#00AA00;*/
+  color: #ffffff;
+  /*#00AA00;*/
   /* margin-top: -1%; */
   /* margin-left: -1%; */
   padding-bottom: 15px;
@@ -259,10 +275,11 @@ max-height:100%;
 
 
 
-.mat-expansion-panel{
+.mat-expansion-panel {
   font-family: Px437_IBM_Conv;
-  font-size: clamp(10px, 5vw,16px);
-  color:#FFFFFF; /*#FFFFFF*/
+  font-size: clamp(10px, 5vw, 16px);
+  color: #FFFFFF;
+  /*#FFFFFF*/
   opacity: 0.7;
 
   /* border: 7px solid rgb(245, 118, 0); */
@@ -275,7 +292,8 @@ max-height:100%;
 
 
 }
-.mat-expansion-panel-header{
+
+.mat-expansion-panel-header {
   background-color: #050d6800;
   padding-bottom: 10%;
   padding-top: 10%;
@@ -289,12 +307,12 @@ max-height:100%;
 
 .ListTitleExpanded {
   /* border: 7px solid yellow; */
-    /* background-color: #ff101000; */
-    /* background-color: #050d6800; */
+  /* background-color: #ff101000; */
+  /* background-color: #050d6800; */
 
 }
 
-.ListTitle{
+.ListTitle {
 
   background-color: #050d6800;
   font-size: clamp(0.5rem, 100%, 1rem);
@@ -302,7 +320,8 @@ max-height:100%;
   /* background-color: #050d6800; */
 
 }
-.ListTitle:hover{
+
+.ListTitle:hover {
   opacity: 1;
   color: #ffffff;
 
@@ -316,10 +335,12 @@ max-height:100%;
   display: flex;
 
 }
+
 .aboutText {
   font-family: Px437_IBM_Conv;
   font-size: clamp(5px, 3vw, 10px);
-  color: #FFFFFF; /*#FFFFFF*/
+  color: #FFFFFF;
+  /*#FFFFFF*/
   text-align: left;
   position: sticky;
 }
@@ -335,21 +356,41 @@ max-height:100%;
 }
 
 
-.ProjectsText {
-  position: sticky;
-  font-family: Px437_IBM_Conv;
-  font-size: clamp(5px, 3vw, 10px);
-  color: #FFFFFF;
-  /* max-width: fit-content; */
-  /* max-height: fit-content; */
+.projects-container {
+  border: 7px solid green;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 
-.ContactURLS{
+.projects-tab-group{
+  border: 7px solid rgb(255, 0, 93);
+  height: 100%;
+  width: 100%;
+  min-width: 25px !important;
+  padding: 5px;
+}
+
+
+.ProjectsText {
+  border: 7px solid rgb(255, 0, 93);
+
+  
+}
+
+
+.ContactURLS {
   position: sticky;
   font-family: Px437_IBM_Conv, monospace;
   font-size: clamp(5px, 3vw, 10px);
-  color: #B9B156; /*#00AAAA*/
+  color: #B9B156;
+  /*#00AAAA*/
   text-decoration: none;
   opacity: 1;
   padding-left: 1%;
@@ -413,60 +454,65 @@ max-height:100%;
   background-color: #050D68;
 
 }
+
 .fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 3s;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .fade-in-fade-out {
-	opacity: 0;
-	animation-name: fadeInOutOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in-out;
-	animation-duration: 11s;
+  opacity: 0;
+  animation-name: fadeInOutOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 11s;
 }
 
 @keyframes fadeInOutOpacity {
-	0% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 1;
+  }
+
   70% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
 .fade-in-godsays {
-	opacity: 1;
-	animation-name: fadeInGodsaysOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 12s;
+  opacity: 1;
+  animation-name: fadeInGodsaysOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 12s;
 }
 
 @keyframes fadeInGodsaysOpacity {
-	0% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
+
   80% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-
-
