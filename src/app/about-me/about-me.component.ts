@@ -16,10 +16,13 @@ export class AboutMeComponent {
 
 
   aboutText: string[] = [
-    "<div class = \"about-container\">\
-      <div class = \"aboutText\"> <br> Location: Nürnberg  <br> Name: Justin Diaz <br> Age: ", 
-     String(myAge),
-      " <br><br><br><br> I'm currently working as a Engineer I</div>\
+    "<br><br><div class = \"about-container\">\
+      <div class = \"aboutText\">\
+      Name: Justin Diaz <br>\
+      Age: ", String(myAge),"<br>\
+      Location: NBG <br>\
+      Skills:<br>Angular RXJS Javascript Powershell Python Lua Docker\
+      <br><br><br><br> I'm currently working as an Engineer I</div>\
       <img class = \"PicOfMe\"src=\"assets/img/me.jpg\" alt=\"\">\
     </div>"
   ]

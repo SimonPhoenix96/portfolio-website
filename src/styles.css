@@ -313,8 +313,6 @@ max-height:100%;
 .about-container {
   position: relative;
   z-index: 2;
-  background-color: #050d6800;
-  /* argin-bottom: -100%; */
   display: flex;
 
 }
@@ -327,10 +325,13 @@ max-height:100%;
 }
 
 .PicOfMe {
-  width: clamp(10%, 20%, 25%);
-  height: clamp(10%, 20%, 25%);
+  width: clamp(20px, 20%, 200px);
+  height: clamp(20px, 20%, 200px);
   float: right;
-  margin-left: 10%;
+  display: inline;
+  left: 0;
+  top: 0;
+  margin-left: 2%;
 }
 
 
