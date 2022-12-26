@@ -1,0 +1,70 @@
+[
+    {
+        "owner": "simonphoenix96",
+        "repo": "portfolio-website",
+        "link": "https://github.com/simonphoenix96/portfolio-website",
+        "description": "source of my portfolio website (justindiaz.xyz) built with angular ;; containing some test widgets i built rxjs",
+        "image": "https://opengraph.githubassets.com/1/simonphoenix96/portfolio-website",
+        "language": "JavaScript",
+        "languageColor": "#f1e05a",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "simonphoenix96",
+        "repo": "crypto-website",
+        "link": "https://github.com/simonphoenix96/crypto-website",
+        "description": "Binance Chain live block view, NFT Gallery, Ethers based Wallet Connection",
+        "image": "https://opengraph.githubassets.com/1/simonphoenix96/crypto-website",
+        "language": "TypeScript",
+        "languageColor": "#3178c6",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "simonphoenix96",
+        "repo": "mpv-userscripts",
+        "link": "https://github.com/simonphoenix96/mpv-userscripts",
+        "description": "Contains my lua | powershell scripts for the media player MPV featuring: =bump-loader= which autoloads bumpworthy.com or wsg bumps (https://www.youtube.com/watch?v=uMOQWMC1xkc) after each file in t…",
+        "image": "https://opengraph.githubassets.com/1/simonphoenix96/mpv-userscripts",
+        "website": "https://www.youtube.com/watch?v=uMOQWMC1xkc",
+        "language": "Lua",
+        "languageColor": "#000080",
+        "stars": "1",
+        "forks": 0
+    },
+    {
+        "owner": "simonphoenix96",
+        "repo": "ricochet-robots",
+        "link": "https://github.com/simonphoenix96/ricochet-robots",
+        "description": "{{{DOCS @ https://simonphoenix96.github.io/ricochet-robots/}}} A simple android board game me and a couple of classmates made for a school project. I worked on the multiplayer aspect of this game u…",
+        "image": "https://opengraph.githubassets.com/1/simonphoenix96/ricochet-robots",
+        "website": "https://simonphoenix96.github.io/ricochet-robots/",
+        "language": "Java",
+        "languageColor": "#b07219",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "simonphoenix96",
+        "repo": "4chan-scraper",
+        "link": "https://github.com/simonphoenix96/4chan-scraper",
+        "description": "4chan scraping suite (tm) mainly used for scraping WEBMs for my MPV bumploader script",
+        "image": "https://opengraph.githubassets.com/1/simonphoenix96/4chan-scraper",
+        "language": "Python",
+        "languageColor": "#3572A5",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "simonphoenix96",
+        "repo": "yt-livestream-grabber",
+        "link": "https://github.com/simonphoenix96/yt-livestream-grabber",
+        "description": "scrapes youtube to check if user live if so then it'll download the stream.",
+        "image": "https://opengraph.githubassets.com/1/simonphoenix96/yt-livestream-grabber",
+        "language": "Python",
+        "languageColor": "#3572A5",
+        "stars": 0,
+        "forks": 0
+    }
+]

@@ -2,11 +2,11 @@ import {Component,OnInit} from '@angular/core';
 import {List} from '../../classes/list';
 import {MatListModule} from '@angular/material/list';
 import { SafePipe } from '../safe.pipe';
-
+import { HttpClient } from '@angular/common/http';
+import {RestApiService} from '../rest-api.service'
 
 let date: Date = new Date();
 let myAge: Number = date.getFullYear() - 1996;
-
 
 @Component({
   selector: 'app-list',
@@ -19,12 +19,15 @@ let myAge: Number = date.getFullYear() - 1996;
 
 
 export class ListComponent implements OnInit {
+  constructor(private http: HttpClient, private RestApi: RestApiService) {
+  }
 
+  pinnedGithubRepos$: JSON;
 
   aboutText: string[] = [
     "<div class = \"AboutText\"> <img class = \"PicOfMe\" src=\"assets/img/me.jpg\" alt=\"\"> <br> Location: Nürnberg  <br><br> Name: Justin Diaz <br><br> Age: ", 
     String(myAge),
-    " <br><br><br><br> I'm currently studying (Business)-Informatics<br> and working part-time in IT</div>"
+    " <br><br><br><br> I'm currently working as a Software Engineer</div>"
   ]
   aboutTextJoined = this.aboutText.join("");
 
@@ -34,7 +37,7 @@ export class ListComponent implements OnInit {
   contactURLSJoined = this.contactURLS.join("");
 
   projectsText: string[] = [
-    "<br> <div class = \"ProjectsText\"> WIP! Meanwhile check my <a href=\"https://github.com/SimonPhoenix96/\" {{appExternalUrl}} target=\"_blank\">Github</a> where I keep my code.</div>"
+    "<br> <div class = \"ProjectsText\"> TEST </div>"
   ]
   projectsTextJoined = this.projectsText.join("");
 
@@ -50,7 +53,7 @@ export class ListComponent implements OnInit {
     },
     {
       title: "* Projects ...",
-      content: this.projectsTextJoined
+      content: ""
     },
     // {title: "* Services ...", content: this.servicesTextJoined},
     {
@@ -65,6 +68,10 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
 
+    this.RestApi.getPinnedGithubRepos().subscribe(data => {
+      console.log(JSON.stringify(data));
+      this.pinnedGithubRepos$ = data;
+    })
 
   }
 
