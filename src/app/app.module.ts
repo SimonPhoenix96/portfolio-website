@@ -18,7 +18,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { GithubPinnedReposComponent } from './github-pinned-repos/github-pinned-repos.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -48,6 +48,7 @@ import { GithubPinnedReposComponent } from './github-pinned-repos/github-pinned-
     MatTabsModule,
     HttpClientModule,
     HttpClientJsonpModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
