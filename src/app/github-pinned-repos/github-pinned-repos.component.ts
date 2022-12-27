@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { RestApiService } from '../rest-api.service'
 import { PinnedGithubRepo } from '../../classes/pinnedgithubrepo';
-
 @Component({
   selector: 'app-github-pinned-repos',
   templateUrl: './github-pinned-repos.component.html',
@@ -12,9 +11,11 @@ export class GithubPinnedReposComponent {
   constructor(private http: HttpClient, private RestApi: RestApiService) {
   }
 
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+
 
   pinnedGithubRepos$: PinnedGithubRepo[] = [];
+
+
 
 
   ngOnInit() {

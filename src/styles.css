@@ -186,23 +186,9 @@
   opacity: 1;
 }
 
-
-/* .NowPlaying{
-  border: 4px solid rgb(174, 0, 255);
-  background-color: #ff001900;
-  opacity: 0.7;
-  width: 100%;  font-size: clamp(5px, 4vw, 13px);
-  text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  /* width: fit-content;
-  height: fit-content; */
-/*}*/
-
 .NowPlayingContainer {
 
 
-  /* border: 4px solid rgb(92, 67, 255); */
 
   bottom: 0;
   opacity: 0.7;
@@ -211,55 +197,44 @@
   position: absolute;
   right: 0;
   z-index: 1;
+  font-size: clamp(0.1rem, -0.0875rem + 18.333vw, 0.8rem);
 
   /* margin-left: 75%; */
   /* left: 0; */
 }
 
-.NowPlayingImage {
-  /* pointer-events: none; */
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+.NowPlayingContainer:hover {
+  opacity: 1;
 }
 
-
+.NowPlayingImage {
+  /* pointer-events: none; */
+  width: clamp(15%, 15vw, 70%);
+  height: clamp(15%, 15vw, 70%);
+}
 
 .NowPlayingText {
   pointer-events: all;
   cursor: pointer;
-  font-size: clamp(0.2rem, 10vw, 1rem);
+
   font-family: IBM-Logo, monospace;
-  font-weight: 200;
-  color: #FFFFFF;
+  /* font-weight: 150; */
   bottom: 0;
-  position: relative;
-
+  color: #FFFFFF;
 }
 
-.NowPlayingText:hover {
-  opacity: 1;
-  color: #C8B907;
-
-}
 
 .NowPlayingGif {
   cursor: pointer;
   color: #FFFFFF;
-  opacity: 0.7;
   height: 13px;
-  width: 100%;
-}
+  width: clamp(10%, 100%, 100%);
 
-.NowPlayingGif:hover {
-  opacity: 1;
-  color: #C8B907;
 }
 
 .header {
   font-family: IBM-Logo;
-  font-size: clamp(18px, 5vw, 40px);
+  font-size: clamp(13px, 6vw, 40px);
   font-weight: 200;
   color: #ffffff;
   /*#00AA00;*/
@@ -281,18 +256,25 @@
 
   /* border: 7px solid rgb(245, 118, 0); */
   background-color: #050d6800;
-  position: relative;
-  /* padding-bottom: 60px; */
-  padding-top: clamp(10px, 10vw, 100px);
-  padding-right: clamp(10px, 10vw, 100px);
+  position: sticky;
+  padding-top: clamp(10px, 10vw, 30px);
+  padding-right: clamp(10px, 10vw, 30px);
   left: 0;
+
 
 
 }
 
+.mat-expansion-panel:hover {
+  opacity: 1;
+  color: #ffffff;
+
+}
+
+
 .mat-expansion-panel-header {
-  padding-bottom: 10%;
-  padding-top: 10%;
+  /* padding-bottom: 10%;
+  padding-top: 10%; */
 
 }
 
@@ -356,26 +338,29 @@
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 16px;
-  padding: 16px;
-  border-radius: 8px;
+
 }
 
 
 .projects-tab-group {
-  border: 7px solid rgb(255, 0, 93);
-  height: 100%;
-  width: 100%;
-  min-width: 25px !important;
-  padding: 5px;
+  border: 7px solid rgb(235, 239, 2);
+
+}
+
+.projects-panel {
+  font-size: 6px;
+  background-color: transparent;
 }
 
 
 .ProjectsText {
   border: 7px solid rgb(255, 0, 93);
-
+  font-family: Px437_IBM_Conv;
+  font-size: clamp(5px, 3vw, 10px);
+  color: #FFFFFF;
+  /*#FFFFFF*/
+  text-align: left;
+  position: sticky;
 
 }
 
@@ -398,7 +383,6 @@
 
 
 .app-container {
-  /* border: 7px solid green; */
 
   /* padding-left: 7%;
   padding-top: 7%;
