@@ -2,9 +2,9 @@
     <mat-tab *ngFor="let repo of pinnedGithubRepos$">{{repo.repo}}</mat-tab>
 </mat-tab-group> -->
 
-<ngb-accordion [closeOthers]="true" class="projects-tab-group" #acc="ngbAccordion">
-    <ngb-panel *ngFor="let repo of pinnedGithubRepos$" title={{repo.repo}} class="projects-panel" >
-        <ng-template ngbPanelContent>
+<!-- <ngb-accordion type="primary" destroyOnHide="true" closeOthers="true">
+    <ngb-panel *ngFor="let repo of pinnedGithubRepos$" title={{repo.repo}}  >
+        <ng-template ngbPanelContent class="projects-accordion-container">
             <div class="ProjectsText">
                 Description:<br>
                 <p>{{repo.description}} </p><br>
@@ -13,7 +13,34 @@
                 Link:<br>
                 <p>{{repo.link}}</p><br>
             </div>
-
         </ng-template>
     </ngb-panel>
-</ngb-accordion>
+</ngb-accordion> -->
+<mat-accordion  [multi]="false">
+<mat-expansion-panel   #thisPanel *ngFor="let repo of pinnedGithubRepos$" title={{repo.repo}} class="github-repo-container">
+  
+    <mat-expansion-panel-header class="github-accordion-panel"  >
+
+      <mat-panel-title class="github-accordion-panel-title" >
+        <div >
+        {{ thisPanel.expanded ? repo.repo   : repo.repo  }}
+        </div>
+      </mat-panel-title>
+
+    </mat-expansion-panel-header >
+
+    <div class = "github-accordion-content-container" [innerHTML]="repo.description | safe: 'html'"></div>
+  </mat-expansion-panel>
+</mat-accordion>
+
+
+<!-- <ngb-carousel class="projects-tab-group" *ngIf="images">
+    <ng-template *ngFor="let repo of pinnedGithubRepos$" ngbSlide>
+        <div>
+            <img class="repo-card" [src]="repo.image" />
+        </div>
+        <div class="carousel-caption">
+            <p>{{repo.repo}}</p>
+        </div>
+    </ng-template>
+</ngb-carousel> -->

@@ -1,0 +1,35 @@
+
+
+.about-container {
+  border: 7px solid rgb(255, 6, 6);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  /* flex-direction: row; */
+
+}
+
+.about-container-title {
+
+
+} 
+
+.aboutText {
+  border: 7px solid rgb(255, 255, 255);
+  font-family: Px437_IBM_Conv;
+  color: #FFFFFF;
+  /*#FFFFFF*/
+  text-align: left;
+  font-size: clamp(0.1rem, -0.0875rem + 18.333vw, 0.8rem);
+  width: 35%;
+}
+
+.PicOfMe {
+  width: clamp(20px, 20%, 200px);
+  height: clamp(20px, 20%, 200px);
+  float: right;
+  display: inline;
+  right: 0;
+  top: 0;
+  margin-left: 2%;
+}

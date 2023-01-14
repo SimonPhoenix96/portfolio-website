@@ -1,0 +1,8 @@
+.github-repo-container{
+
+    border: 7px solid rgb(0, 128, 75);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;   
+}

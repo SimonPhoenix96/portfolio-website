@@ -1,8 +1,8 @@
-<mat-expansion-panel #thisPanel *ngFor="let list of projectsList">
+<mat-expansion-panel #thisPanel *ngFor="let list of projectsList" class="projects-container">
 
-  <mat-expansion-panel-header class="ListTitle">
+  <mat-expansion-panel-header >
 
-    <mat-panel-title>
+    <mat-panel-title class="projects-container-title">
       <div>
         {{ thisPanel.expanded ? (list.title | slice:0:-3) : list.title }}
       </div>
@@ -10,7 +10,7 @@
 
   </mat-expansion-panel-header>
 
-  <app-github-pinned-repos class="projects-container"></app-github-pinned-repos>
+  <app-github-pinned-repos></app-github-pinned-repos>
 
   
 </mat-expansion-panel>

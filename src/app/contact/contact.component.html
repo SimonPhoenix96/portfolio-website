@@ -1,8 +1,8 @@
-    <mat-expansion-panel  #thisPanel *ngFor="let list of contactList" >
+    <mat-expansion-panel  #thisPanel *ngFor="let list of contactList"  class="contacts-container">
   
-      <mat-expansion-panel-header class="ListTitle" >
+      <mat-expansion-panel-header >
   
-        <mat-panel-title >
+        <mat-panel-title class="contacts-container-title">
           <div >
           {{ thisPanel.expanded ? (list.title | slice:0:-3)   : list.title  }}
           </div>
@@ -10,7 +10,7 @@
   
       </mat-expansion-panel-header >
   
-      <div class = "ListTitleExpanded" [innerHTML]="list.content | safe: 'html'"></div>
+      <div class = "ContactsText" [innerHTML]="list.content | safe: 'html'"></div>
     </mat-expansion-panel>
   
   
